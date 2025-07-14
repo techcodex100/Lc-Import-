@@ -13,6 +13,11 @@ app = FastAPI(
     version="1.0.0"
 )
 
+# ✅ Root route for Render or browser health check
+@app.get("/")
+def read_root():
+    return {"message": "LC Draft Import Generator is live 🚀"}
+
 class LCDraftData(BaseModel):
     document_credit_no: Optional[str] = ""
     date_of_issue: Optional[str] = ""
