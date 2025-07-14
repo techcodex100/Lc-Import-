@@ -59,7 +59,7 @@ def generate_lc_import_pdf(data: LCDraftData):
                 c.drawString(100, 800, f"⚠️ Missing background: {path}")
 
         def draw_text(value, x, y):
-            c.setFont("Helvetica", 8)
+            c.setFont("Helvetica", 13)
             c.drawString(x, y, value)
 
         # === Page 1 ===
